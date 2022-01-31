@@ -1,0 +1,64 @@
+html {
+    text-align: center;
+}
+
+.head {
+    margin-bottom: 41px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.gridContainer {
+   
+    margin-top: 25px;
+    margin-right: 40px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 575px;
+    width: 575px;
+  }
+  .square {
+    background-color: white;
+    border: 0px solid;
+  }
+
+  .color {
+    background-color: rgb(233, 7, 7);
+    border: 1px solid rgb(236, 220, 220);
+    
+  }
+   
+   
+
+
+
+.grid-item {
+    
+    padding: 1em; 
+    border: 0.2px solid #ddd;
+    transition: 0.5s, transform 12s ease;
+    
+    
+    
+    
+  }
+
+
+  .grid-item:hover {
+    background-color: rgb(69, 224, 64);
+    opacity: 0;
+    transition: opacity 1s;
+    transform: scale(1);
+
+  }
+
+
