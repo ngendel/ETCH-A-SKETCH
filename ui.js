@@ -2,6 +2,8 @@ const grid = document.getElementsByClassName("gridContainer")[0];
 const userInput = document.getElementById("pxQuantity");
 const resetButton = document.querySelector(".reset")
 
+
+
 makeGrid = () => {
     for (let i = 0; i < 256; i++) {
         const div = document.createElement("div");
@@ -44,7 +46,27 @@ resetButton.addEventListener("click", function(){
     grid.style.setProperty("grid-template-rows", `repeat(16, 2fr)`);
     makeGrid();
 });
+
 makeGrid()
+
+
+
+
+const colorInput = document.querySelector('input[type=color]')
+
+
+changeColor = () => {
+  grid.style.setProperty(
+    "background-color",
+   colorInput.value
+  )
+}
+
+
+colorInput.addEventListener('change', changeColor);
+
+
+
 
 
 
@@ -55,14 +77,3 @@ makeGrid()
 
 
 //When mouse enters div, div changes color. As mouse moves through div, leave mouse trail. 
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
 html {
     text-align: center;
+    
 }
 
 .head {
@@ -22,18 +23,18 @@ html {
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 0px;
     height: 575px;
     width: 575px;
   }
   .square {
-    background-color: white;
+    background-color: rgb(252, 249, 249);
     border: 0px solid;
   }
 
   .color {
-    background-color: rgb(233, 7, 7);
-    border: 1px solid rgb(236, 220, 220);
+    
+    
     
   }
    
